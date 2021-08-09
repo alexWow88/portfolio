@@ -66,6 +66,8 @@ nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
 
 }
 nav > div > ul{
@@ -119,15 +121,29 @@ nav > .nav-left > a {
   border-top: 0.5px solid #8f8f8f;
   border-bottom: 0.5px solid #8f8f8f;
 }
-.skills-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 40px;
-  color: white;
-  background-color: transparent;
-  /* max-width: 1200px; */
-  justify-content: center;
-  margin: auto;
+@media only screen and (max-width: 1000px){
+  .skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:30px;
+    color: white;
+    background-color: transparent;
+    justify-content: center;
+    margin: auto;
+    max-width: 600px;
+  }
+}
+@media only screen and (min-width: 1000px){
+  .skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 40px;
+    color: white;
+    background-color: transparent;
+    justify-content: center;
+    margin: auto;
+    max-width: 800px;
+  }
 }
 .skills-grid .skills{
   text-align: center;
@@ -141,8 +157,8 @@ nav > .nav-left > a {
   background-color:transparent;
 }
 .svg-inline--fa{
-  height: 80px;
-  width: 80px; 
+  height: 70px;
+  width: 70px; 
   background-color: transparent;
 }
 .mySkills h1{
