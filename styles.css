@@ -1,0 +1,187 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+main {
+  background-color: black;
+}
+
+#particles-js {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+/* Intro Banner styling */
+
+.intro-banner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  position: absolute;
+}
+
+.intro-banner-container {
+  height: 475px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.intro-banner-container h2 {
+  font-size: 80px;
+}
+.intro-banner-container h2 .intro-name{
+  font-size: 60px;
+  color: rgba(255, 255, 255, 0.836);
+}
+.intro-banner-container h3 {
+  color: rgba(255, 255, 255, 0.712);
+}
+.myProjects-button{
+  background-color: #05c2c9;
+  padding: 5px 8px;
+  border: 1px solid white;
+}
+.myProjects-button:hover{
+  background-color: white;
+  transform: scale(1.2);
+  transition: transform .15s;
+}
+
+/* nav bar styling */
+nav{
+  height: 70px;
+  border-bottom: 0.5px solid #9e9e9e;
+  border-top: 0.5px solid #9e9e9e;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+nav > div > ul{
+  list-style-type: none;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+nav > div > ul > li > a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 0 3px 0;
+  border-bottom: 2px solid black;
+  margin: 0 30px;
+  display: flex;
+  align-items: center;
+}
+nav > .nav-left{
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+nav > .nav-left > a {
+  color: white;
+  text-decoration: none;
+}
+#particles-js > nav > div > ul > li:nth-child(1) > a:hover{
+  border-bottom: 2px solid white;
+  transition: 0.1s linear;
+}
+#particles-js > nav > div > ul > li:nth-child(2) > a:hover{
+  border-bottom: 2px solid white;
+  transition: 0.1s linear;
+}
+#particles-js > nav > div > ul > li:nth-child(3) > a:hover{
+  border-bottom: 2px solid white;
+  transition: 0.1s linear;
+}
+
+/* My Skills styling */
+
+.mySkills {
+  padding-bottom: 15px;
+  padding-top: 15px;
+  background-color: #05c2c9;
+  border-top: 0.5px solid #8f8f8f;
+  border-bottom: 0.5px solid #8f8f8f;
+}
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+  color: white;
+  background-color: transparent;
+  /* max-width: 1200px; */
+  justify-content: center;
+  margin: auto;
+}
+.skills-grid .skills{
+  text-align: center;
+  background-color: transparent;
+}
+.skills-grid .skills:hover{
+  color:#e31b6d;
+  transition: 0.1s linear;
+}
+.skills-grid .skills .skills-text{
+  background-color:transparent;
+}
+.svg-inline--fa{
+  height: 80px;
+  width: 80px; 
+  background-color: transparent;
+}
+.mySkills h1{
+  background-color: transparent;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  padding-bottom: 5px;
+}
+
+/* About section styling */
+.about{padding-bottom: 15px;
+  padding-top: 15px;
+  background-color: #05c2c9;
+  border-top: 0.5px solid #8f8f8f;
+  border-bottom: 0.5px solid #8f8f8f;
+  text-align: center;
+}
+
+/*project card styling */
+.project-card{
+  display: flex;
+  padding: 15px;
+  background-color: #05c2c9;
+}
+.project-card img{
+  height: 140px;
+  width: 200px;
+}
+.project-description{
+  max-width: 60%;
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.project-card-1, .project-card-3{
+  display: flex;
+  justify-content: flex-end;
+}
+.main-projects-condensed{
+  margin: 0 20%;
+}
