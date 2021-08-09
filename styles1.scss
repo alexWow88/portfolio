@@ -118,6 +118,7 @@ main {
   padding-bottom: 15px;
   padding-top: 15px;
   background-color: #05c2c9;
+  text-shadow: 1px 1px 2px #04878b, 0 0 25px #05c2c9, 0 0 5px #04878b;
   border-top: 0.5px solid #8f8f8f;
   border-bottom: 0.5px solid #8f8f8f;
   h1{
@@ -173,34 +174,73 @@ main {
 
 /* About section styling */
 .about {
+  color: white;
+  text-shadow: 1px 1px 2px #04878b, 0 0 25px #05c2c9, 0 0 5px #04878b;
   padding-bottom: 15px;
   padding-top: 15px;
+  margin-top: 10px;
   background-color: #05c2c9;
   border-top: 0.5px solid #8f8f8f;
   border-bottom: 0.5px solid #8f8f8f;
   text-align: center;
+  h2 {
+    font-size: 30px;
+  }
 }
 
 /*project card styling */
 .project-card{
+  font-family: euclid-flex,Arial,sans-serif;
+  color: white;
+  text-shadow: 1px 1px 2px #04878b, 0 0 25px #05c2c9, 0 0 5px #04878b;
   display: flex;
+  align-items: center;
   padding: 15px;
+  margin: 10px;
   background-color: #05c2c9;
-}
-.project-card img{
-  height: 140px;
-  width: 200px;
-}
-.project-description{
-  max-width: 60%;
-  padding-left: 15px;
-  display: flex;
-  flex-direction: column;
+  border: 1px solid #e31b6d;
+  img{
+    height: 140px;
+    width: 200px;
+    border: 1px solid white;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px 0 rgba(253, 251, 251, 0.418), 0 8px 16px 0 rgba(255, 255, 255, 0.418);
+  }
+  .project-description{
+    max-width: 60%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    h3 {
+      font-size: 24px;
+    }
+  }
+  .project-card__button{
+    width: 150px;
+    color: white;
+    background-color: #ff3e8f;
+    text-shadow: 1px 1px 2px black, 0 0 25px #05c2c9, 0 0 5px #04878b;
+    font-size: 17px;
+    border: 1px solid #e31b6d;
+    margin: 5px;
+    border-radius: 4px;
+  }
 }
 .project-card-1, .project-card-3{
   display: flex;
   justify-content: flex-end;
+  transform: rotate(1deg)
+}
+.project-card-2 {
+  transform: rotate(-1deg)
+}
+@media only screen and (min-width: 1000px){
+  .project-card {
+    max-width: 800px;
+  }
 }
 .main-projects-condensed{
-  margin: 0 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
