@@ -47,9 +47,11 @@ main #particles-js {
   background-color: #05c2c9;
   padding: 5px 8px;
   border: 1px solid white;
+  text-decoration: none;
+  color: white;
 }
 .intro-banner__container__button:hover {
-  background-color: white;
+  background-color: #e31b6d;
   transform: scale(1.2);
   transition: transform 0.15s;
 }
