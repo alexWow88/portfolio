@@ -108,12 +108,22 @@ main {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    margin: 0 30px;
     > a {
       color: white;
       text-decoration: none;
     }
   }
 }
+@media only screen and (max-width: 650px){
+  .main-nav{
+    justify-content: center;
+    > .nav-left{
+      display: none;
+    }
+  }
+}
+
 
 /* My Skills styling */
 
@@ -130,16 +140,16 @@ main {
     font-size: 30px;
     text-align: center;
     color: white;
-    padding-bottom: 5px;
+    padding: 5px 0 10px 0;
   }
   .skills-grid{
     .skills{
       text-align: center;
       background-color: transparent;
-      .svg-inline--fa{
-        height: 70px;
-        width: 70px; 
-        background-color: transparent;
+      .fab {
+        font-size: 70px;
+        padding-bottom: 5px;
+        padding-top: 5px;
       }
     }
     .skills:hover{
@@ -190,6 +200,7 @@ main {
   text-align: center;
   h2 {
     font-size: 30px;
+    padding-bottom: 10px;
   }
 }
 

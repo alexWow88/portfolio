@@ -105,12 +105,21 @@ main #particles-js {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  margin: 0 30px;
 }
 .main-nav > .nav-left > a {
   color: white;
   text-decoration: none;
 }
 
+@media only screen and (max-width: 650px) {
+  .main-nav {
+    justify-content: center;
+  }
+  .main-nav > .nav-left {
+    display: none;
+  }
+}
 /* My Skills styling */
 .mySkills {
   padding-bottom: 15px;
@@ -126,16 +135,16 @@ main #particles-js {
   font-size: 30px;
   text-align: center;
   color: white;
-  padding-bottom: 5px;
+  padding: 5px 0 10px 0;
 }
 .mySkills .skills-grid .skills {
   text-align: center;
   background-color: transparent;
 }
-.mySkills .skills-grid .skills .svg-inline--fa {
-  height: 70px;
-  width: 70px;
-  background-color: transparent;
+.mySkills .skills-grid .skills .fab {
+  font-size: 70px;
+  padding-bottom: 5px;
+  padding-top: 5px;
 }
 .mySkills .skills-grid .skills:hover {
   color: #e31b6d;
@@ -184,6 +193,7 @@ main #particles-js {
 }
 .about h2 {
   font-size: 30px;
+  padding-bottom: 10px;
 }
 
 /*project section styling */
