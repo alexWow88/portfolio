@@ -457,11 +457,12 @@ main #particles-js {
 #contact .contact__icons {
   padding: 5px;
 }
-#contact .contact__icons .fab, #contact .contact__icons .fas, #contact .contact__icons .contact__icons__cv {
+#contact .contact__icons .fab, #contact .contact__icons .fas, #contact .contact__icons__cv {
   font-size: 40px;
   padding: 0 15px 0 15px;
+  color: white;
 }
-#contact .contact__icons .fab:hover, #contact .contact__icons .fas:hover, #contact .contact__icons .contact__icons__cv:hover {
+#contact .contact__icons .fab:hover, #contact .contact__icons .fas:hover, #contact .contact__icons__cv:hover {
   color: #e31b6d;
 }
 

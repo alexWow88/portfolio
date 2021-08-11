@@ -478,11 +478,12 @@ main {
   }
   .contact__icons{
     padding: 5px;
-    .fab, .fas, .contact__icons__cv {
+    .fab, .fas, &__cv {
       font-size: 40px;
       padding: 0 15px 0 15px;
+      color: white;
     }
-    .fab:hover, .fas:hover, .contact__icons__cv:hover {
+    .fab:hover, .fas:hover, &__cv:hover {
       color: #e31b6d;
     }
   }
