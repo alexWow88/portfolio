@@ -95,6 +95,47 @@
         </div>
       </div>
     </section>
+        <!-- Slideshow container -->
+    <section class="other-projects">
+      <h2>OTHER PROJECTS</h2>
+    </section>
+    <div class="slideshow-container">
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <img src="placeholder.jpg" style="width:100%">
+        <div class="text">
+          <h2>PROJECT 1</h2>
+          <p class="text__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum facere eum veniam in perferendis incidunt quam asperiores fugit dolor earum, dignissimos repellat officiis exercitationem perspiciatis voluptate itaque, repellendus commodi iusto? Lorem ipsum, dolor sit amet consectetur</p>
+          <a href="" class="text__button">View Project</a>
+        </div>
+      </div>
+      <div class="mySlides fade">
+        <img src="placeholder2.jpg" style="width:100%">
+        <div class="text">
+          <h2>PROJECT 2</h2>
+          <p class="text__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum facere eum veniam in perferendis incidunt quam asperiores fugit dolor earum, dignissimos repellat officiis exercitationem perspiciatis voluptate itaque, repellendus commodi iusto? Lorem ipsum, dolor sit amet consectetur</p>
+          <a href="" class="text__button">View Project</a>
+        </div>
+      </div>
+      <div class="mySlides fade">
+        <img src="placeholder3.jpg" style="width:100%">
+        <div class="text">
+          <h2>PROJECT 3</h2>
+          <p class="text__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum facere eum veniam in perferendis incidunt quam asperiores fugit dolor earum, dignissimos repellat officiis exercitationem perspiciatis voluptate itaque, repellendus commodi iusto? Lorem ipsum, dolor sit amet consectetur</p>
+          <a href="" class="text__button">View Project</a>
+        </div>
+      </div>
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
     <section id="contact">
       <h2>CONTACT ME</h2>
       <h3>Thanks for stopping by!!!</h3>
@@ -110,5 +151,37 @@
   </footer>
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script src="app.js"></script>
+
+<script>
+  var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
 </body>
 </html>
