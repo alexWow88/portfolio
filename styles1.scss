@@ -5,12 +5,14 @@
   box-sizing: border-box;
 }
 
-main {
+body{
   background-color: black;
   #particles-js {
     width: 100vw;
     height: 100vh;
     display: flex;
+    position: fixed;
+    z-index: -0.1;
   }
 }
 
@@ -25,7 +27,7 @@ main {
   width: 100vw;
   height: 100vh;
   text-align: center;
-  position: absolute;
+  // position: absolute;
   &__container {
     height: 475px;
     color: white;
@@ -33,16 +35,20 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: relative;
+    // position: relative;
+    z-index: 90;
     h2 {
       font-size: 80px;
+      z-index: 91;
     }
     &__name{
       font-size: 60px;
       color: rgba(255, 255, 255, 0.836);
+      z-index: 91;
     }
     h3 {
       color: rgba(255, 255, 255, 0.712);
+      z-index: 91;
     }
     &__button{
       background-color: #05c2c9;
@@ -50,6 +56,7 @@ main {
       border: 1px solid white;
       text-decoration: none;
       color: white;
+      z-index: 91;
     }
     &__button:hover{
       background-color: #e31b6d;
@@ -82,7 +89,7 @@ main {
       color: white;
       text-decoration: none;
       padding: 5px 0 3px 0;
-      border-bottom: 2px solid black;
+      border-bottom: 2px solid transparent;
       margin: 0 30px;
       display: flex;
       align-items: center;
@@ -135,6 +142,7 @@ main {
   border-top: 0.5px solid #8f8f8f;
   border-bottom: 0.5px solid #8f8f8f;
   font-size: 20px;
+  position: relative;
   h1{
     background-color: transparent;
     font-size: 30px;
@@ -193,11 +201,12 @@ main {
   text-shadow: 1px 1px 2px #04878b, 0 0 25px #05c2c9, 0 0 5px #04878b;
   padding-bottom: 15px;
   padding-top: 15px;
-  margin-top: 10px;
+  margin-top: 55px;
   background-color: #00abb1;
   border-top: 0.5px solid #8f8f8f;
   border-bottom: 0.5px solid #8f8f8f;
   text-align: center;
+  position: relative;
   h2 {
     font-size: 30px;
     padding-bottom: 10px;
@@ -206,13 +215,14 @@ main {
 
 /*project section styling */
 .main-projects{
+  position: relative;
   h2{
     color: white;
     font-size: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px;
+    margin: 70px 0 10px 0;
   }
 }
 .main-projects-condensed{
@@ -353,6 +363,8 @@ main {
   color: white;
   font-size: 26px;
   padding-bottom: 10px;
+  margin: 10px;
+  position: relative;
 }
 .slideshow-container {
   max-width: 1000px;
@@ -470,6 +482,7 @@ main {
   color: white;
   text-shadow: 1px 1px 2px #04878b, 0 0 25px #05c2c9, 0 0 15px #04878b;
   padding: 10px;
+  position: relative;
   h2 {
     font-size: 32px;
   }
@@ -488,6 +501,9 @@ main {
     }
   }
 }
+.dot{
+  position: relative;
+}
 
 /* Footer styling */
 
@@ -500,4 +516,5 @@ footer{
   font-size: 20px;
   padding: 10px;
   margin: 5px 0;
+  position: relative;
 }
