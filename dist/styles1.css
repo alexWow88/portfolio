@@ -317,3 +317,42 @@ main #particles-js {
     transform: rotate(-1deg) translate(-200px, 0px);
   }
 }
+/* Contact section styling */
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #05c2c9;
+  color: white;
+  text-shadow: 1px 1px 2px #04878b, 0 0 25px #05c2c9, 0 0 15px #04878b;
+  padding: 10px;
+}
+#contact h2 {
+  font-size: 32px;
+}
+#contact h3 {
+  font-size: 22px;
+}
+#contact .contact__icons {
+  padding: 5px;
+}
+#contact .contact__icons .fab, #contact .contact__icons .fas, #contact .contact__icons .contact__icons__cv {
+  font-size: 40px;
+  padding: 0 15px 0 15px;
+}
+#contact .contact__icons .fab:hover, #contact .contact__icons .fas:hover, #contact .contact__icons .contact__icons__cv:hover {
+  color: #e31b6d;
+}
+
+/* Footer styling */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #04878b;
+  font-size: 20px;
+  padding: 10px;
+  margin: 5px 0;
+}
