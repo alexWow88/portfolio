@@ -1,3 +1,5 @@
+@import "_variables";
+
 * {
   padding: 0;
   margin: 0;
@@ -28,7 +30,7 @@ body{
   text-align: center;
   &__container {
     height: 475px;
-    color: white;
+    color: $primary-text-color;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,7 +51,7 @@ body{
       z-index: 91;
     }
     &__button{
-      background-color: #05c2c9;
+      background-color: $primary-color;
       padding: 5px 8px;
       border: 1px solid white;
       text-decoration: none;
@@ -57,7 +59,7 @@ body{
       z-index: 91;
     }
     &__button:hover{
-      background-color: #e31b6d;
+      background-color: $secondary-color;
       transform: scale(1.2);
       transition: transform .15s;
     }
@@ -78,12 +80,12 @@ body{
   z-index: 99;
   > .nav-right > ul {
     list-style-type: none;
-    color: white;
+    color: $primary-text-color;
     font-size: 20px;
     display: flex;
     justify-content: center;
     > li > a {
-      color: white;
+      color: $primary-text-color;
       text-decoration: none;
       padding: 5px 0 3px 0;
       border-bottom: 2px solid transparent;
@@ -105,7 +107,7 @@ body{
     }
   }
   > .nav-left{
-    color: white;
+    color: $primary-text-color;
     text-decoration: none;
     font-size: 24px;
     display: flex;
@@ -114,7 +116,7 @@ body{
     align-items: center;
     margin: 0 30px;
     > a {
-      color: white;
+      color: $primary-text-color;
       text-decoration: none;
     }
   }
@@ -133,7 +135,7 @@ body{
 .mySkills {
   padding-bottom: 15px;
   padding-top: 15px;
-  background-color: #05c2c9;
+  background-color: $primary-color;
   text-shadow: 1px 1px 2px #04878b, 0 0 25px #05c2c9, 0 0 5px #04878b;
   border-top: 0.5px solid #8f8f8f;
   border-bottom: 0.5px solid #8f8f8f;
@@ -143,7 +145,7 @@ body{
     background-color: transparent;
     font-size: 30px;
     text-align: center;
-    color: white;
+    color: $primary-text-color;
     padding: 5px 0 10px 0;
   }
   .skills-grid{
@@ -157,7 +159,7 @@ body{
       }
     }
     .skills:hover{
-      color:#e31b6d;
+      color: $secondary-color;
       transition: 0.1s linear;
     }
     .skills .skills-text{
@@ -170,7 +172,7 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap:30px;
-    color: white;
+    color: $primary-text-color;
     background-color: transparent;
     justify-content: center;
     margin: auto;
@@ -182,7 +184,7 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 40px;
-    color: white;
+    color: $primary-text-color;
     background-color: transparent;
     justify-content: center;
     margin: auto;
@@ -192,7 +194,7 @@ body{
 
 /* About section styling */
 .about {
-  color: white;
+  color: $primary-text-color;
   font-size: 20px;
   text-shadow: 1px 1px 2px #04878b, 0 0 25px #05c2c9, 0 0 5px #04878b;
   padding-bottom: 15px;
@@ -213,12 +215,13 @@ body{
 .main-projects{
   /* position: relative; */
   h2{
-    color: white;
+    color: $primary-text-color;
     font-size: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 70px 0 10px 0;
+    position: relative;
   }
 }
 .main-projects-condensed{
@@ -228,15 +231,15 @@ body{
   .project-card{
     font-family: euclid-flex,Arial,sans-serif;
     font-size: 20px;
-    color: white;
+    color: $primary-text-color;
     text-shadow: 1px 1px 2px #04878b, 0 0 25px #05c2c9, 0 0 5px #04878b;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 15px;
     margin: 10px;
-    background-color: #05c2c9;
-    border: 1px solid #e31b6d;
+    background-color: $primary-color;
+    border: 1px solid $secondary-color;
     max-width: 700px;
     position: relative;
     img{
@@ -262,7 +265,7 @@ body{
       background-color: #ff3e8f;
       text-shadow: 1px 1px 2px black, 0 0 25px #05c2c9, 0 0 5px #04878b;
       font-size: 17px;
-      border: 1px solid #e31b6d;
+      border: 1px solid $secondary-color;
       margin: 5px;
       border-radius: 4px;
     }
@@ -354,7 +357,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: $primary-text-color;
   font-size: 26px;
   padding-bottom: 10px;
   margin: 10px;
@@ -397,7 +400,7 @@ body{
 }
     /* Caption text */
 .text {
-  color: #f2f2f2;
+  color: $primary-text-color;
   text-shadow: 1px 1px 2px #04878b, 0 0 25px #05c2c9, 0 0 5px #04878b;
   font-size: 15px;
   padding: 8px 12px;
@@ -418,7 +421,7 @@ body{
     background-color: #ff3e8f;
     text-shadow: 1px 1px 2px black, 0 0 25px #05c2c9, 0 0 5px #04878b;
     font-size: 17px;
-    border: 1px solid #e31b6d;
+    border: 1px solid $secondary-color;
     margin: 5px;
     border-radius: 4px;
   }
@@ -460,8 +463,8 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #05c2c9;
-  color: white;
+  background-color: $primary-color;
+  color: $primary-text-color;
   text-shadow: 1px 1px 2px #04878b, 0 0 25px #05c2c9, 0 0 15px #04878b;
   padding: 10px;
   position: relative;
@@ -476,10 +479,10 @@ body{
     .fab, .fas, &__cv {
       font-size: 40px;
       padding: 0 15px 0 15px;
-      color: white;
+      color: $primary-text-color;
     }
     .fab:hover, .fas:hover, &__cv:hover {
-      color: #e31b6d;
+      color: $secondary-color;
     }
   }
 }
@@ -493,7 +496,7 @@ footer{
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: $primary-text-color;
   background-color: #04878b;
   font-size: 20px;
   padding: 10px;
