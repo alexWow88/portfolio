@@ -205,7 +205,7 @@ body #particles-js {
 
 /*project section styling */
 .main-projects {
-  position: relative;
+  /* position: relative; */
 }
 .main-projects h2 {
   color: white;
@@ -234,6 +234,7 @@ body #particles-js {
   background-color: #05c2c9;
   border: 1px solid #e31b6d;
   max-width: 700px;
+  position: relative;
 }
 .main-projects-condensed .project-card img {
   height: 190px;
