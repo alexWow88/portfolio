@@ -407,7 +407,16 @@ body #particles-js {
   margin: 5px;
   border-radius: 4px;
 }
+.text__button:hover {
+  background-color: #fa78ae;
+  transition: 0.2s;
+}
 
+@media only screen and (min-width: 1000px) {
+  .text__button {
+    font-size: 22px;
+  }
+}
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
