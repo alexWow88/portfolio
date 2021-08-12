@@ -263,7 +263,8 @@ body #particles-js {
 }
 .main-projects-condensed .project-card .project-card__button:hover {
   background-color: #fa78ae;
-  transition: 0.2s;
+  transform: scale(1.1);
+  transition: transform 0.2s;
 }
 
 .project-card-1, .project-card-3 {
