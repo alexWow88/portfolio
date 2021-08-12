@@ -261,6 +261,11 @@ body #particles-js {
   margin: 5px;
   border-radius: 4px;
 }
+.main-projects-condensed .project-card .project-card__button:hover {
+  background-color: #fa78ae;
+  transform: scale(1.1);
+  transition: transform 0.2s;
+}
 
 .project-card-1, .project-card-3 {
   display: flex;
@@ -407,7 +412,16 @@ body #particles-js {
   margin: 5px;
   border-radius: 4px;
 }
+.text__button:hover {
+  background-color: #fa78ae;
+  transition: 0.2s;
+}
 
+@media only screen and (min-width: 1000px) {
+  .text__button {
+    font-size: 22px;
+  }
+}
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
@@ -418,6 +432,7 @@ body #particles-js {
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+  position: relative;
 }
 
 .active, .dot:hover {
@@ -470,16 +485,13 @@ body #particles-js {
   padding: 5px;
 }
 #contact .contact__icons .fab, #contact .contact__icons .fas, #contact .contact__icons__cv {
+  text-decoration: none;
   font-size: 40px;
   padding: 0 15px 0 15px;
   color: white;
 }
 #contact .contact__icons .fab:hover, #contact .contact__icons .fas:hover, #contact .contact__icons__cv:hover {
   color: #e31b6d;
-}
-
-.dot {
-  position: relative;
 }
 
 /* Footer styling */
