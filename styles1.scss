@@ -268,6 +268,10 @@ body{
       margin: 5px;
       border-radius: 4px;
     }
+    .project-card__button:hover{
+      background-color: #fa78ae;
+      transition: .2s;
+    }    
   }
 }
 .project-card-1, .project-card-3{
