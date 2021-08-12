@@ -5,13 +5,15 @@
   box-sizing: border-box;
 }
 
-main {
+body {
   background-color: black;
 }
-main #particles-js {
+body #particles-js {
   width: 100vw;
   height: 100vh;
   display: flex;
+  position: fixed;
+  z-index: -0.1;
 }
 
 /* Intro Banner styling */
@@ -22,7 +24,6 @@ main #particles-js {
   width: 100vw;
   height: 100vh;
   text-align: center;
-  position: absolute;
 }
 .intro-banner__container {
   height: 475px;
@@ -31,17 +32,20 @@ main #particles-js {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: relative;
+  z-index: 90;
 }
 .intro-banner__container h2 {
   font-size: 80px;
+  z-index: 91;
 }
 .intro-banner__container__name {
   font-size: 60px;
   color: rgba(255, 255, 255, 0.836);
+  z-index: 91;
 }
 .intro-banner__container h3 {
   color: rgba(255, 255, 255, 0.712);
+  z-index: 91;
 }
 .intro-banner__container__button {
   background-color: #05c2c9;
@@ -49,6 +53,7 @@ main #particles-js {
   border: 1px solid white;
   text-decoration: none;
   color: white;
+  z-index: 91;
 }
 .intro-banner__container__button:hover {
   background-color: #e31b6d;
@@ -80,7 +85,7 @@ main #particles-js {
   color: white;
   text-decoration: none;
   padding: 5px 0 3px 0;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid transparent;
   margin: 0 30px;
   display: flex;
   align-items: center;
@@ -129,6 +134,7 @@ main #particles-js {
   border-top: 0.5px solid #8f8f8f;
   border-bottom: 0.5px solid #8f8f8f;
   font-size: 20px;
+  position: relative;
 }
 .mySkills h1 {
   background-color: transparent;
@@ -185,11 +191,12 @@ main #particles-js {
   text-shadow: 1px 1px 2px #04878b, 0 0 25px #05c2c9, 0 0 5px #04878b;
   padding-bottom: 15px;
   padding-top: 15px;
-  margin-top: 10px;
+  margin-top: 55px;
   background-color: #00abb1;
   border-top: 0.5px solid #8f8f8f;
   border-bottom: 0.5px solid #8f8f8f;
   text-align: center;
+  position: relative;
 }
 .about h2 {
   font-size: 30px;
@@ -203,7 +210,8 @@ main #particles-js {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px;
+  margin: 70px 0 10px 0;
+  position: relative;
 }
 
 .main-projects-condensed {
@@ -224,6 +232,7 @@ main #particles-js {
   background-color: #05c2c9;
   border: 1px solid #e31b6d;
   max-width: 700px;
+  position: relative;
 }
 .main-projects-condensed .project-card img {
   height: 190px;
@@ -326,6 +335,8 @@ main #particles-js {
   color: white;
   font-size: 26px;
   padding-bottom: 10px;
+  margin: 10px;
+  position: relative;
 }
 
 .slideshow-container {
@@ -370,7 +381,7 @@ main #particles-js {
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
+  color: white;
   text-shadow: 1px 1px 2px #04878b, 0 0 25px #05c2c9, 0 0 5px #04878b;
   font-size: 15px;
   padding: 8px 12px;
@@ -447,6 +458,7 @@ main #particles-js {
   color: white;
   text-shadow: 1px 1px 2px #04878b, 0 0 25px #05c2c9, 0 0 15px #04878b;
   padding: 10px;
+  position: relative;
 }
 #contact h2 {
   font-size: 32px;
@@ -466,6 +478,10 @@ main #particles-js {
   color: #e31b6d;
 }
 
+.dot {
+  position: relative;
+}
+
 /* Footer styling */
 footer {
   display: flex;
@@ -476,4 +492,5 @@ footer {
   font-size: 20px;
   padding: 10px;
   margin: 5px 0;
+  position: relative;
 }
