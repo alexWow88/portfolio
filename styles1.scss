@@ -213,7 +213,6 @@ body{
 
 /*project section styling */
 .main-projects{
-  /* position: relative; */
   h2{
     color: $primary-text-color;
     font-size: 50px;
@@ -368,7 +367,7 @@ body{
   position: relative;
   margin: auto;
   padding: 15px 15px 15px 15px;
-  background-color: #05c2c9;
+  background-color: $primary-color;
 }
     /* Hide the images by default */
 .mySlides {
@@ -497,7 +496,7 @@ footer{
   justify-content: center;
   align-items: center;
   color: $primary-text-color;
-  background-color: #04878b;
+  background-color: $third-color;
   font-size: 20px;
   padding: 10px;
   margin: 5px 0;
