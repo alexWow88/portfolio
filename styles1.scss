@@ -260,7 +260,7 @@ body{
     }
     .project-card__button{
       width: 150px;
-      color: white;
+      color: $button-text-color;
       background-color: $button-color;
       text-shadow: 1px 1px 2px black, 0 0 25px #05c2c9, 0 0 5px #04878b;
       font-size: 17px;
@@ -269,7 +269,7 @@ body{
       border-radius: 4px;
     }
     .project-card__button:hover{
-      background-color: #fa78ae;
+      background-color: $button-hover-color;
       transform: scale(1.1);
       transition: transform 0.2s;
     }    
@@ -421,7 +421,7 @@ body{
     text-decoration: none;
     width: 150px;
     padding: 0 20px;
-    color: white;
+    color: $button-text-color;
     background-color: $button-color;
     text-shadow: 1px 1px 2px black, 0 0 25px #05c2c9, 0 0 5px #04878b;
     font-size: 17px;
@@ -430,7 +430,7 @@ body{
     border-radius: 4px;
   }
   &__button:hover {
-    background-color: #fa78ae;
+    background-color: $button-hover-color;
     transition: .2s;
   }
 }
