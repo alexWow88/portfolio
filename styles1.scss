@@ -241,12 +241,20 @@ body{
     border: 1px solid $secondary-color;
     max-width: 700px;
     position: relative;
-    img{
-      height: 190px;
-      width: 265px;
+    &__image{
+      // height: 190px;
+      // width: 265px;
+      width: 98%;
       border: 1px solid white;
       border-radius: 8px;
       box-shadow: 0 8px 16px 0 rgba(253, 251, 251, 0.418), 0 8px 16px 0 rgba(255, 255, 255, 0.418);
+    }
+    &__images {
+      display: flex;
+
+      &__image {
+        width: 33.3%;
+      }
     }
     .project-description{
       padding-left: 15px;
@@ -287,8 +295,8 @@ body{
   .main-projects-condensed{
     .project-card{
       img{
-        height: 260px;
-        width: 370px;
+        // height: 260px;
+        // width: 370px;
       } 
     }
   }
@@ -297,8 +305,8 @@ body{
   .main-projects-condensed{
     .project-card{
       img{
-        height: 310px;
-        width: 435px;
+        // height: 310px;
+        // width: 435px;
       } 
     }
   }
@@ -307,8 +315,8 @@ body{
   .main-projects-condensed{
     .project-card{
       img{
-        height: 350px;
-        width: 495px;
+        // height: 350px;
+        // width: 495px;
       }
       .project-description{
         font-size: 22px;
