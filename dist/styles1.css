@@ -256,6 +256,11 @@ body #particles-js {
 .main-projects-condensed .project-card .project-description h3 {
   font-size: 32px;
 }
+.main-projects-condensed .project-card .project-description h4 {
+  font-size: 24px;
+  padding: 7px 0 10px 0;
+  color: #fcd5e6;
+}
 .main-projects-condensed .project-card .project-card__button {
   width: 150px;
   color: white;
