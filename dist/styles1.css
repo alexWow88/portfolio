@@ -262,6 +262,7 @@ body #particles-js {
   color: #fcd5e6;
 }
 .main-projects-condensed .project-card .project-card__button {
+  text-decoration: none;
   width: 150px;
   color: white;
   background-color: #ff3e8f;
