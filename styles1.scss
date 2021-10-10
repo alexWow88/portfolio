@@ -31,13 +31,14 @@ body{
   text-align: center;
 
   &__container {
-    height: 475px;
     color: $primary-text-color;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     z-index: 90;
+    border: solid transparent 1px;
+    border-radius: 60px;
 
     h2 {
       font-size: 80px;
@@ -275,9 +276,20 @@ body{
 
     &__images {
       display: flex;
+      border: 1px solid white;
+      border-radius: 8px;
+      box-shadow: 0 8px 16px 0 rgba(253, 251, 251, 0.418), 0 8px 16px 0 rgba(255, 255, 255, 0.418);
 
       &__image {
         width: 33.3%;
+      }
+
+      &__first {
+        border-radius: 8px 0 0 8px;
+      }
+
+      &__last {
+        border-radius: 0 8px 8px 0;
       }
     }
     .project-description{
@@ -298,20 +310,15 @@ body{
       }
     }
 
-    .project-card__button{
-      text-decoration: none;
-      width: 150px;
-      color: $button-text-color;
-      background-color: $button-color;
-      text-shadow: 1px 1px 2px black, 0 0 25px #05c2c9, 0 0 5px #04878b;
-      font-size: 17px;
-      border: 1px solid $secondary-color;
-      margin: 5px;
+    .fas, .fab {
+      color: $button-color;
+      text-shadow: 1px 1px 2px white, 0 0 25px white, 0 0 5px white;
+      font-size: 32px;
+      margin: 10px 5px 5px 5px;
       border-radius: 4px;
     }
 
-    .project-card__button:hover{
-      background-color: $button-hover-color;
+    .fas:hover, .fab:hover{
       transform: scale(1.1);
       transition: transform 0.2s;
     }    
