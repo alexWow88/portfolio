@@ -420,7 +420,7 @@ body{
   padding: 16px;
   color: white;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 50px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
@@ -429,10 +429,16 @@ body{
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
+  text-shadow: 0 0 10px $button-color,0 0 5px $button-color, 0 0 5px $button-color;
+}
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+  text-shadow: 0 0 10px $button-color,0 0px 5px $button-color, 0 0 5px $button-color;
 }
     /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: $button-color;
 }
     /* Caption text */
 .text {
@@ -452,23 +458,18 @@ body{
     font-size: 32px;
   }
 
-  &__button {
-    text-decoration: none;
-    width: 150px;
-    padding: 0 20px;
-    color: $button-text-color;
-    background-color: $button-color;
-    text-shadow: 1px 1px 2px black, 0 0 25px #05c2c9, 0 0 5px #04878b;
-    font-size: 17px;
-    border: 1px solid $secondary-color;
-    margin: 5px;
+  .fas, .fab {
+    color: $button-color;
+    text-shadow: 1px 1px 2px white, 0 0 25px white, 0 0 5px white;
+    font-size: 32px;
+    margin: 10px 5px 5px 5px;
     border-radius: 4px;
   }
 
-  &__button:hover {
-    background-color: $button-hover-color;
-    transition: .2s;
-  }
+  .fas:hover, .fab:hover{
+    transform: scale(1.1);
+    transition: transform 0.2s;
+  }  
 }
 @media only screen and (min-width: 1000px){
   .text{
