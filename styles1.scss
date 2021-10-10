@@ -9,6 +9,7 @@
 
 body{
   background-color: black;
+
   #particles-js {
     width: 100vw;
     height: 100vh;
@@ -28,28 +29,33 @@ body{
   width: 100vw;
   height: 100vh;
   text-align: center;
+
   &__container {
-    height: 475px;
     color: $primary-text-color;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    // position: relative;
     z-index: 90;
+    border: solid transparent 1px;
+    border-radius: 60px;
+
     h2 {
       font-size: 80px;
       z-index: 91;
     }
+
     &__name{
       font-size: 60px;
       color: rgba(255, 255, 255, 0.836);
       z-index: 91;
     }
+
     h3 {
       color: rgba(255, 255, 255, 0.712);
       z-index: 91;
     }
+
     &__button{
       background-color: $primary-color;
       padding: 5px 8px;
@@ -58,6 +64,7 @@ body{
       color: white;
       z-index: 91;
     }
+
     &__button:hover{
       background-color: $secondary-color;
       transform: scale(1.2);
@@ -78,12 +85,14 @@ body{
   position: sticky;
   top: 0;
   z-index: 99;
+
   > .nav-right > ul {
     list-style-type: none;
     color: $primary-text-color;
     font-size: 20px;
     display: flex;
     justify-content: center;
+
     > li > a {
       color: $primary-text-color;
       text-decoration: none;
@@ -93,19 +102,23 @@ body{
       display: flex;
       align-items: center;
     }
+
     > li:nth-child(1) > a:hover{
       border-bottom: 2px solid white;
       transition: 0.1s linear;
     }
+
     > li:nth-child(2) > a:hover{
       border-bottom: 2px solid white;
       transition: 0.1s linear;
     }
+
     > li:nth-child(3) > a:hover{
       border-bottom: 2px solid white;
       transition: 0.1s linear;
     }
   }
+
   > .nav-left{
     color: $primary-text-color;
     text-decoration: none;
@@ -115,15 +128,18 @@ body{
     justify-content: space-around;
     align-items: center;
     margin: 0 30px;
+
     > a {
       color: $primary-text-color;
       text-decoration: none;
     }
   }
 }
+
 @media only screen and (max-width: 650px){
   .main-nav{
     justify-content: center;
+
     > .nav-left{
       display: none;
     }
@@ -141,6 +157,7 @@ body{
   border-bottom: 0.5px solid #8f8f8f;
   font-size: 20px;
   position: relative;
+
   h1{
     background-color: transparent;
     font-size: 30px;
@@ -148,20 +165,24 @@ body{
     color: $primary-text-color;
     padding: 5px 0 10px 0;
   }
+
   .skills-grid{
     .skills{
       text-align: center;
       background-color: transparent;
-      .fab {
+
+      .fas, .fab {
         font-size: 70px;
         padding-bottom: 5px;
         padding-top: 5px;
       }
     }
+
     .skills:hover{
       color: $secondary-color;
       transition: 0.1s linear;
     }
+
     .skills .skills-text{
       background-color:transparent;
     }
@@ -179,6 +200,7 @@ body{
     max-width: 600px;
   }
 }
+
 @media only screen and (min-width: 1000px){
   .skills-grid {
     display: grid;
@@ -205,6 +227,7 @@ body{
   border-bottom: 0.5px solid #8f8f8f;
   text-align: center;
   position: relative;
+
   h2 {
     font-size: 30px;
     padding-bottom: 10px;
@@ -223,10 +246,12 @@ body{
     position: relative;
   }
 }
+
 .main-projects-condensed{
   display: flex;
   flex-direction: column;
   align-items: center;
+
   .project-card{
     font-family: euclid-flex,Arial,sans-serif;
     font-size: 20px;
@@ -241,19 +266,30 @@ body{
     border: 1px solid $secondary-color;
     max-width: 700px;
     position: relative;
+
     &__image{
-      // height: 190px;
-      // width: 265px;
       width: 98%;
       border: 1px solid white;
       border-radius: 8px;
       box-shadow: 0 8px 16px 0 rgba(253, 251, 251, 0.418), 0 8px 16px 0 rgba(255, 255, 255, 0.418);
     }
+
     &__images {
       display: flex;
+      border: 1px solid white;
+      border-radius: 8px;
+      box-shadow: 0 8px 16px 0 rgba(253, 251, 251, 0.418), 0 8px 16px 0 rgba(255, 255, 255, 0.418);
 
       &__image {
         width: 33.3%;
+      }
+
+      &__first {
+        border-radius: 8px 0 0 8px;
+      }
+
+      &__last {
+        border-radius: 0 8px 8px 0;
       }
     }
     .project-description{
@@ -262,81 +298,62 @@ body{
       flex-direction: column;
       align-items: center;
       text-align: center;
+
       h3 {
         font-size: 32px;
       }
+
       h4 {
         font-size: 24px;
         padding: 7px 0 10px 0;
         color: #fcd5e6;
       }
     }
-    .project-card__button{
-      text-decoration: none;
-      width: 150px;
-      color: $button-text-color;
-      background-color: $button-color;
-      text-shadow: 1px 1px 2px black, 0 0 25px #05c2c9, 0 0 5px #04878b;
-      font-size: 17px;
-      border: 1px solid $secondary-color;
-      margin: 5px;
+
+    .fas, .fab {
+      color: $button-color;
+      text-shadow: 1px 1px 2px white, 0 0 25px white, 0 0 5px white;
+      font-size: 32px;
+      margin: 10px 5px 5px 5px;
       border-radius: 4px;
     }
-    .project-card__button:hover{
-      background-color: $button-hover-color;
+
+    .fas:hover, .fab:hover{
       transform: scale(1.1);
       transition: transform 0.2s;
     }    
   }
 }
+
 .project-card-1, .project-card-3{
   display: flex;
   justify-content: flex-end;
   transform: rotate(1deg)
 }
+
 .project-card-2 {
   background-color: #00abb1;
 }
-@media only screen and (min-width: 480px){
-  .main-projects-condensed{
-    .project-card{
-      img{
-        // height: 260px;
-        // width: 370px;
-      } 
-    }
-  }
-}
-@media only screen and (min-width: 770px){
-  .main-projects-condensed{
-    .project-card{
-      img{
-        // height: 310px;
-        // width: 435px;
-      } 
-    }
-  }
-}
+
 @media only screen and (min-width: 1000px){
   .main-projects-condensed{
     .project-card{
-      img{
-        // height: 350px;
-        // width: 495px;
-      }
       .project-description{
         font-size: 22px;
         h3 {
           font-size: 34;
         }
       }
+
       .project-card__button{
         font-size: 22px;
       }
     }
+
     .project-card-1, .project-card-3{
       transform: rotate(1deg) translate(130px, 0px);
     }
+
     .project-card-2 {
       transform: rotate(-1deg) translate(-130px, 0px);    
     }
@@ -345,23 +362,23 @@ body{
 @media only screen and (min-width: 1400px){
   .main-projects-condensed{
     .project-card{
-      img{
-        height: 370px;
-        width: 525px;
-      }
       .project-description{
         font-size: 22px;
+
         h3 {
           font-size: 36;
         }
       }
+
       .project-card__button{
         font-size: 22px;
       }
     }
+
     .project-card-1, .project-card-3{
       transform: rotate(1deg) translate(200px, 0px);
     }
+
     .project-card-2 {
       transform: rotate(-1deg) translate(-200px, 0px);    
     }
@@ -381,6 +398,7 @@ body{
   margin: 10px;
   position: relative;
 }
+
 .slideshow-container {
   max-width: 1000px;
   position: relative;
@@ -402,7 +420,7 @@ body{
   padding: 16px;
   color: white;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 50px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
@@ -411,10 +429,16 @@ body{
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
+  text-shadow: 0 0 10px $button-color,0 0 5px $button-color, 0 0 5px $button-color;
+}
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+  text-shadow: 0 0 10px $button-color,0 0px 5px $button-color, 0 0 5px $button-color;
 }
     /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: $button-color;
 }
     /* Caption text */
 .text {
@@ -424,29 +448,28 @@ body{
   padding: 8px 12px;
   width: 100%;
   text-align: center;
+
   &__description{
     margin: 10px;
     font-size: 20px;
   }
+
   h2 {
     font-size: 32px;
   }
-  &__button {
-    text-decoration: none;
-    width: 150px;
-    padding: 0 20px;
-    color: $button-text-color;
-    background-color: $button-color;
-    text-shadow: 1px 1px 2px black, 0 0 25px #05c2c9, 0 0 5px #04878b;
-    font-size: 17px;
-    border: 1px solid $secondary-color;
-    margin: 5px;
+
+  .fas, .fab {
+    color: $button-color;
+    text-shadow: 1px 1px 2px white, 0 0 25px white, 0 0 5px white;
+    font-size: 32px;
+    margin: 10px 5px 5px 5px;
     border-radius: 4px;
   }
-  &__button:hover {
-    background-color: $button-hover-color;
-    transition: .2s;
-  }
+
+  .fas:hover, .fab:hover{
+    transform: scale(1.1);
+    transition: transform 0.2s;
+  }  
 }
 @media only screen and (min-width: 1000px){
   .text{
@@ -467,6 +490,7 @@ body{
   transition: background-color 0.6s ease;
   position: relative;
 }
+
 .active, .dot:hover {
   background-color: #717171;
 }
@@ -477,10 +501,12 @@ body{
   animation-name: fade;
   animation-duration: 1.5s;
 }
+
 @-webkit-keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
 }
+
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
@@ -498,20 +524,25 @@ body{
   text-shadow: 1px 1px 2px #04878b, 0 0 25px #05c2c9, 0 0 15px #04878b;
   padding: 10px;
   position: relative;
+
   h2 {
     font-size: 32px;
   }
+
   h3{
     font-size: 22px;
   }
+
   .contact__icons{
     padding: 5px;
+
     .fab, .fas, &__cv {
       text-decoration: none;
       font-size: 40px;
       padding: 0 15px 0 15px;
       color: $primary-text-color;
     }
+    
     .fab:hover, .fas:hover, &__cv:hover {
       color: $secondary-color;
     }
