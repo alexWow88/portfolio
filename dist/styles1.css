@@ -147,7 +147,7 @@ body #particles-js {
   text-align: center;
   background-color: transparent;
 }
-.mySkills .skills-grid .skills .fab {
+.mySkills .skills-grid .skills .fas, .mySkills .skills-grid .skills .fab {
   font-size: 70px;
   padding-bottom: 5px;
   padding-top: 5px;
