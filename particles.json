@@ -26,7 +26,7 @@
       }
     },
     "opacity": {
-      "value": 0.16572100474277726,
+      "value": 0.31572100474277726,
       "random": true,
       "anim": {
         "enable": false,
@@ -71,7 +71,7 @@
     "detect_on": "canvas",
     "events": {
       "onhover": {
-        "enable": true,
+        "enable": false,
         "mode": "bubble"
       },
       "onclick": {
