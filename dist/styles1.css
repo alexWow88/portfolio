@@ -260,7 +260,7 @@ body #particles-js {
   border-radius: 0 8px 8px 0;
 }
 .main-projects-condensed .project-card .project-description {
-  padding-left: 15px;
+  padding: 0 12px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -406,11 +406,15 @@ body #particles-js {
   text-align: center;
 }
 .text__description {
-  margin: 10px;
   font-size: 20px;
 }
 .text h2 {
   font-size: 32px;
+}
+.text h4 {
+  font-size: 24px;
+  padding: 7px 0 10px 0;
+  color: #fcd5e6;
 }
 .text .fas, .text .fab {
   color: #ff3e8f;
