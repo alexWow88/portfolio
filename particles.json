@@ -8,13 +8,13 @@
       }
     },
     "color": {
-      "value": "#05c2c9"
+      "value": ["#2600ff", "#00f"]
     },
     "shape": {
       "type": "polygon",
       "stroke": {
-        "width": 0.2,
-        "color": "#e31b6d"
+        "width": 0,
+        "color": "#ffffff"
       },
       "polygon": {
         "nb_sides": 4
@@ -71,7 +71,7 @@
     "detect_on": "canvas",
     "events": {
       "onhover": {
-        "enable": false,
+        "enable": true,
         "mode": "bubble"
       },
       "onclick": {
