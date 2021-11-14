@@ -56,19 +56,81 @@ body{
       z-index: 91;
     }
 
-    &__button{
-      background-color: $primary-color;
-      padding: 5px 8px;
-      border: 1px solid white;
+    a {
+      position: relative;
+      width: 165px;
+      height: 50px;
+      line-height: 48px;
+      background: #000;
+      margin: 10px;
+      text-transform: uppercase;
+      font-size: 16px;
+      letter-spacing: 4px;
       text-decoration: none;
-      color: white;
-      z-index: 91;
     }
 
-    &__button:hover{
-      background-color: $secondary-color;
-      transform: scale(1.2);
-      transition: transform .15s;
+    a:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(45deg,#5b03ff,#00f);
+      animation: animate 20s linear infinite;
+      background-size: 400%;
+      opacity: 1;
+      transition: 0.5s;
+    }
+
+    a:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(45deg,#5b03ff,rgb(38, 0, 255));
+      animation: animate 20s linear infinite;
+      background-size: 400%;
+      filter: blur(20px);
+      opacity: 1;
+      transition: 0.5s;
+    }
+
+    @keyframes animate
+    {
+      0%
+      {
+        background-position: 0 0;
+      }
+      50%
+      {
+        background-position: 300% 0;
+      }
+      100%
+      {
+        background-position: 0 0;
+      }
+    }
+
+    a span {
+      position: absolute;
+      display: block;
+      top: 1px;
+      left: 1px;
+      right: 1px;
+      bottom: 1px;
+      text-align: center;
+      background: #0c0c0c;
+      color: rgba(255,255,255,1);
+      transition: 0.5s;
+      z-index: 1;
+    }
+
+    a:hover span
+    {
+      background: transparent;
     }
   }
 }
@@ -86,6 +148,7 @@ body{
   position: sticky;
   top: 0;
   z-index: 99;
+  letter-spacing: 3px;
 
   .nav-right {
     width: 400px;
@@ -160,8 +223,8 @@ body{
 .mySkills {
   padding-bottom: 15px;
   padding-top: 15px;
-  background-color: $primary-color;
-  text-shadow: 1px 1px 2px #04878b, 0 0 25px #05c2c9, 0 0 5px #04878b;
+  background: linear-gradient(45deg,#3e24ce,rgb(9, 9, 223));
+  text-shadow: 1px 1px 2px #000000, 0 0 25px #0205b4, 0 0 3px #000000;
   border-top: 0.5px solid #8f8f8f;
   border-bottom: 0.5px solid #8f8f8f;
   font-size: 20px;
@@ -188,7 +251,9 @@ body{
     }
 
     .skills:hover{
-      color: $secondary-color;
+      // color: rgb(216, 89, 255);
+      
+      text-shadow: 2px 2px 2px rgb(0, 0, 0), 0 0 4px white, 0 0 8px white;
       transition: 0.1s linear;
     }
 
@@ -231,14 +296,15 @@ body{
   flex-direction: column;
   color: $primary-text-color;
   font-size: 20px;
-  text-shadow: 1px 1px 2px #04878b, 0 0 25px #05c2c9, 0 0 5px #04878b;
+  text-shadow: 1px 1px 2px #000000, 0 0 25px #0205b4, 0 0 3px #000000;
   padding: 15px 20px 15px 20px;
   margin-top: 55px;
-  background-color: #00abb1;
+  background: linear-gradient(45deg,#3e24ce,rgb(9, 9, 223));
   border-top: 0.5px solid #8f8f8f;
   border-bottom: 0.5px solid #8f8f8f;
   text-align: center;
   position: relative;
+  letter-spacing: 1.1px;
 
   h2 {
     font-size: 30px;
@@ -272,14 +338,14 @@ body{
     font-family: euclid-flex,Arial,sans-serif;
     font-size: 20px;
     color: $primary-text-color;
-    text-shadow: 1px 1px 2px #04878b, 0 0 25px #05c2c9, 0 0 5px #04878b;
+    text-shadow: 1px 1px 2px #000000, 0 0 25px #0205b4, 0 0 3px #000000;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 8px;
     margin: 20px;
-    background-color: $primary-color;
-    border: 1px solid $secondary-color;
+    background: linear-gradient(45deg,#3e24ce,rgb(9, 9, 223));
+    box-shadow: 1px 1px 2px 2px #3e24ce;
     max-width: 700px;
     position: relative;
 
@@ -287,14 +353,14 @@ body{
       width: 100%;
       border: 1px solid white;
       border-radius: 8px;
-      box-shadow: 0 8px 16px 0 rgba(253, 251, 251, 0.418), 0 8px 16px 0 rgba(255, 255, 255, 0.418);
+      box-shadow: 0 4px 4px 0 rgba(253, 251, 251, 0.418), 0 2px 2px 0 rgba(255, 255, 255, 0.418);
     }
 
     &__images {
       display: flex;
       border: 1px solid white;
       border-radius: 8px;
-      box-shadow: 0 8px 16px 0 rgba(253, 251, 251, 0.418), 0 8px 16px 0 rgba(255, 255, 255, 0.418);
+      box-shadow: 0 4px 4px 0 rgba(253, 251, 251, 0.418), 0 2px 2px 0 rgba(255, 255, 255, 0.418);
 
       &__image {
         width: 33.3%;
@@ -328,7 +394,7 @@ body{
 
     .fas, .fab {
       color: $button-color;
-      text-shadow: 1px 1px 2px white, 0 0 25px white, 0 0 5px white;
+      text-shadow: 1px 1px 1px white, 0 0 8px white, 0 0 2px white;
       font-size: 32px;
       margin: 10px 5px 5px 5px;
       border-radius: 4px;
@@ -348,7 +414,7 @@ body{
 }
 
 .project-card-2 {
-  background-color: #00abb1;
+  background: linear-gradient(45deg,#3e24ce,rgb(9, 9, 223));
 }
 
 @media only screen and (min-width: 1000px){
@@ -420,8 +486,9 @@ body{
   position: relative;
   margin: auto;
   padding: 8px 8px 8px 8px;
-  background-color: $primary-color;
-  border: 1px solid $secondary-color;
+  background: linear-gradient(45deg,#3e24ce,rgb(9, 9, 223));
+  // border: 1px solid $secondary-color;
+  box-shadow: 1px 1px 2px 2px #3e24ce;
 }
     /* Hide the images by default */
 .mySlides {
@@ -430,7 +497,7 @@ body{
   img {
     border: 1px solid white;
     border-radius: 8px;
-    box-shadow: 0 8px 16px 0 rgba(253, 251, 251, 0.418), 0 8px 16px 0 rgba(255, 255, 255, 0.418);
+    box-shadow: 0 4px 4px 0 rgba(253, 251, 251, 0.418), 0 2px 2px 0 rgba(255, 255, 255, 0.418);
   }
 }
     /* Next & previous buttons */
@@ -466,7 +533,7 @@ body{
     /* Caption text */
 .text {
   color: $primary-text-color;
-  text-shadow: 1px 1px 2px #04878b, 0 0 25px #05c2c9, 0 0 5px #04878b;
+  text-shadow: 1px 1px 2px #000000, 0 0 25px #0205b4, 0 0 3px #000000;
   font-size: 15px;
   padding: 8px 12px;
   width: 100%;
@@ -488,7 +555,7 @@ body{
 
   .fas, .fab {
     color: $button-color;
-    text-shadow: 1px 1px 2px white, 0 0 25px white, 0 0 5px white;
+    text-shadow: 1px 1px 1px white, 0 0 8px white, 0 0 2px white;
     font-size: 32px;
     margin: 10px 5px 5px 5px;
     border-radius: 4px;
@@ -554,9 +621,9 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: $primary-color;
+  background: linear-gradient(45deg,#3e24ce,rgb(9, 9, 223));
   color: $primary-text-color;
-  text-shadow: 1px 1px 2px #04878b, 0 0 25px #05c2c9, 0 0 15px #04878b;
+  text-shadow: 1px 1px 2px #000000, 0 0 25px #0205b4, 0 0 3px #000000;
   padding: 10px;
   position: relative;
 
@@ -591,7 +658,7 @@ footer{
   justify-content: center;
   align-items: center;
   color: $primary-text-color;
-  background-color: $third-color;
+  background: linear-gradient(45deg,#3e24ce,rgb(9, 9, 223));
   font-size: 20px;
   padding: 10px;
   position: relative;
