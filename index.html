@@ -1,247 +1,361 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="dist/styles1.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://kit.fontawesome.com/f5fffb9770.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <title>Alex Wower's Portfolio</title>
-</head>
-<body>
-  <div id="particles-js">
-  </div>
-  <main>
-    <section class="intro-banner">
-      <div class="intro-banner__container">
-        <h2><span data-aos="fade-left" data-aos-delay="300">Hi. </span><span class="intro-banner__container__name" data-aos="fade-left" data-aos-delay="300">I'm Alex</span></h2>
-        <h3 data-aos="fade-left" data-aos-delay="600">software developer, problem solver, quality engineer </h3>
-        <br>
-        <a href="#projects-link" class="intro-banner__container__button" data-aos="fade-in" data-aos-delay="1300"><span>MY PROJECTS</span></a>
-      </div>
-    </section>
-    <nav class="main-nav">
-      <a href="index.html" class="nav-left">Alex Wower</a>
-      <div class="nav-right">
-        <ul>
-          <li><a href="#projects-link">PROJECTS</a></li>
-          <li><a href="#about-link">ABOUT</a></li>
-          <li><a href="#contact">CONTACT</a></li>
-        </ul>
-      </div>
-    </nav>
-    <section class="mySkills">
-      <h1>SKILLS</h1>
-      <div class="skills-grid">
-        <div class="skills skills-js">
-          <span class="fab fa-js-square"></span>
-          <div class="skills-text">JS</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/styles1.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/f5fffb9770.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Alex Wower's Portfolio</title>
+  </head>
+  <body>
+    <div id="particles-js"></div>
+    <main>
+      <section class="intro-banner">
+        <div class="intro-banner__container">
+          <h2>
+            <span data-aos="fade-left" data-aos-delay="300">Hi. </span
+            ><span
+              class="intro-banner__container__name"
+              data-aos="fade-left"
+              data-aos-delay="300"
+              >I'm Alex</span
+            >
+          </h2>
+          <h3 data-aos="fade-left" data-aos-delay="600">
+            software developer, problem solver, quality engineer
+          </h3>
+          <br />
+          <a
+            href="#projects-link"
+            class="intro-banner__container__button"
+            data-aos="fade-in"
+            data-aos-delay="1300"
+            ><span>MY PROJECTS</span></a
+          >
         </div>
-        <div class="skills skills-react">
-          <span class="fab fa-brands fa-react"></span>
-          <div class="skills-text">REACT</div>
+      </section>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-left">Alex Wower</a>
+        <div class="nav-right">
+          <ul>
+            <li><a href="#projects-link">PROJECTS</a></li>
+            <li><a href="#about-link">ABOUT</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
         </div>
-        <div class="skills skills-html">
-          <span class="fab fa-html5"></span>
-          <div class="skills-text">HTML</div>
-        </div>
-        <div class="skills skills-css">
-          <span class="fab fa-css3-alt"></span>
-          <div class="skills-text">CSS</div>
-        </div>
-        <div class="skills skills-github">
-          <span class="fab fa-github"></span>
-          <div class="skills-text">Github</div>
-        </div>
-        <div class="skills skills-sass">
-          <span class="fab fa-sass"></span>
-          <div class="skills-text">SASS</div>
-        </div>
-        <div class="skills skills-java">
-          <span class="fab fa-java"></span>
-          <div class="skills-text">JAVA</div>
-        </div>
-        <div class="skills skills-spring">
-          <span class="fas fa-leaf"></span>
-          <div class="skills-text">SPRING</div>
-        </div>
-        <div class="skills skills-cypress">
-          <span class="fas fa-tasks"></span>
-          <div class="skills-text">CYPRESS</div>
-        </div>
-        <div class="skills skills-jest">
-          <span class="fas fa-check-circle"></span>
-          <div class="skills-text">JEST</div>
-        </div>
-        <div class="skills skills-mysql">
-          <span class="fas fa-database"></span>
-          <div class="skills-text">MySQL</div>
-        </div>
-        <div class="skills skills-google-cloud-platform">
-          <span class="fas fa-cloud-upload-alt"></span>
-          <div class="skills-text">GCP</div>
-        </div>
-      </div>
-    </section>
-    <section id="about-link"></section>
-    <section id="about" class="about">
-      <h2>ABOUT</h2>
-      <p class="about__paragraph">I had taken coding courses during university on my way to an Industrial & Systems Engineering degree, and it really sparked my interest. After 7.5 years as a Quality Engineer working in the USA and the UK, a career in coding was just too appealing and I decided to follow my passion. I completed a Tech Consultancy Course over 12 weeks to be a Junior Software Developer Consultant with Nology and started my new career. Take a look at some of my projects!
-      </p>
-    </section>
-    <section id="projects-link"></section>
-    <section id="projects" class="main-projects">
-      <h2>PROJECTS</h2>
-      <div class="main-projects-condensed">
-        <div class="aos-animation" data-aos="fade-up">
-        <div class="project-card project-card-1">
-          <div class="project-card__images">
-            <img class="project-card__images__image project-card__images__first" src="./assets/images/mole-game.PNG" alt="mole-game-image">
-            <img class="project-card__images__image" src="./assets/images/mole-midgame-image.PNG" alt="mole-midgame-image">
-            <img class="project-card__images__image project-card__images__last" src="./assets/images/mole-gameover-image.PNG" alt="mole-gameover-image">
+      </nav>
+      <section class="mySkills">
+        <h1>SKILLS</h1>
+        <div class="skills-grid">
+          <div class="skills skills-js">
+            <span class="fab fa-js-square"></span>
+            <div class="skills-text">JS</div>
           </div>
-          <div class="project-description">
-            <h3>WHACK-A-MOLE GAME</h3>
-            <h4>VANILLA JAVASCRIPT - SCSS - BEM</h4>
-            <p>Play an arcade classic, Whack-A-Mole! Have fun whacking some moles locally with a friend and saving your highscores to see who is the best. Be careful, because these moles might trick you with bombs!</p>
-            <div class="project-description__links">
-              <a href="https://alexwow88.github.io/mole-game/" class="project-card__button"><span class="fas fa-external-link-alt"></span></a>
-              <a href="https://github.com/alexWow88/mole-game"><span class="fab fa-github"></span></a>
+          <div class="skills skills-react">
+            <span class="fab fa-brands fa-react"></span>
+            <div class="skills-text">REACT</div>
+          </div>
+          <div class="skills skills-html">
+            <span class="fab fa-html5"></span>
+            <div class="skills-text">HTML</div>
+          </div>
+          <div class="skills skills-css">
+            <span class="fab fa-css3-alt"></span>
+            <div class="skills-text">CSS</div>
+          </div>
+          <div class="skills skills-github">
+            <span class="fab fa-github"></span>
+            <div class="skills-text">Github</div>
+          </div>
+          <div class="skills skills-sass">
+            <span class="fab fa-sass"></span>
+            <div class="skills-text">SASS</div>
+          </div>
+          <div class="skills skills-java">
+            <span class="fab fa-java"></span>
+            <div class="skills-text">JAVA</div>
+          </div>
+          <div class="skills skills-spring">
+            <span class="fas fa-leaf"></span>
+            <div class="skills-text">SPRING</div>
+          </div>
+          <div class="skills skills-cypress">
+            <span class="fas fa-tasks"></span>
+            <div class="skills-text">CYPRESS</div>
+          </div>
+          <div class="skills skills-jest">
+            <span class="fas fa-check-circle"></span>
+            <div class="skills-text">JEST</div>
+          </div>
+          <div class="skills skills-mysql">
+            <span class="fas fa-database"></span>
+            <div class="skills-text">MySQL</div>
+          </div>
+          <div class="skills skills-google-cloud-platform">
+            <span class="fas fa-cloud-upload-alt"></span>
+            <div class="skills-text">GCP</div>
+          </div>
+        </div>
+      </section>
+      <section id="about-link"></section>
+      <section id="about" class="about">
+        <h2>ABOUT</h2>
+        <p class="about__paragraph">
+          I had taken coding courses during university on my way to an
+          Industrial & Systems Engineering degree, and it really sparked my
+          interest. After 7.5 years as a Quality Engineer working in the USA and
+          the UK, a career in coding was just too appealing and I decided to
+          follow my passion. I completed a Tech Consultancy Course over 12 weeks
+          to be a Junior Software Developer Consultant with Nology and started
+          my new career. Take a look at some of my projects!
+        </p>
+      </section>
+      <section id="projects-link"></section>
+      <section id="projects" class="main-projects">
+        <h2>PROJECTS</h2>
+        <div class="main-projects-condensed">
+          <div class="aos-animation" data-aos="fade-up">
+            <div class="project-card project-card-1">
+              <div class="project-card__images">
+                <img
+                  class="project-card__images__image project-card__images__first"
+                  src="./assets/images/mole-game.PNG"
+                  alt="mole-game-image"
+                />
+                <img
+                  class="project-card__images__image"
+                  src="./assets/images/mole-midgame-image.PNG"
+                  alt="mole-midgame-image"
+                />
+                <img
+                  class="project-card__images__image project-card__images__last"
+                  src="./assets/images/mole-gameover-image.PNG"
+                  alt="mole-gameover-image"
+                />
+              </div>
+              <div class="project-description">
+                <h3>WHACK-A-MOLE GAME</h3>
+                <h4>VANILLA JAVASCRIPT - SCSS - BEM</h4>
+                <p>
+                  Play an arcade classic, Whack-A-Mole! Have fun whacking some
+                  moles locally with a friend and saving your highscores to see
+                  who is the best. Be careful, because these moles might trick
+                  you with bombs!
+                </p>
+                <div class="project-description__links">
+                  <a
+                    href="https://alexwow88.github.io/mole-game/"
+                    class="project-card__button"
+                    ><span class="fas fa-external-link-alt"></span
+                  ></a>
+                  <a href="https://github.com/alexWow88/mole-game"
+                    ><span class="fab fa-github"></span
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="aos-animation" data-aos="fade-up">
+            <div class="project-card project-card-2">
+              <img
+                class="project-card__image"
+                src="./assets/images/calculator.PNG"
+                alt="calculator-image"
+              />
+              <div class="project-description">
+                <h3>iPHONE CALCULATOR</h3>
+                <h4>VANILLA JS - SCSS - BEM - CYPRESS TESTED</h4>
+                <p>
+                  The iPhone Calculator remade using Vanilla Javascript.
+                  Calculator is fully responsive uses 2 displays. One to track
+                  what numbers and operations you have typed and one to display
+                  the computed result.
+                </p>
+                <div class="project-description__links">
+                  <a
+                    href="https://alexwow88.github.io/calculator/"
+                    class="project-card__button"
+                    ><span class="fas fa-external-link-alt"></span
+                  ></a>
+                  <a href="https://github.com/alexWow88/calculator"
+                    ><span class="fab fa-github"></span
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="aos-animation" data-aos="fade-up">
+            <div class="project-card project-card-3">
+              <img
+                class="project-card__image"
+                src="./assets/images/bubble-tea.PNG"
+                alt="bubble-tea-game-image"
+              />
+              <div class="project-description">
+                <h3>BUBBLE TEA ADVENTURE GAME</h3>
+                <h4>JAVA</h4>
+                <p>
+                  Enjoy a fun turn-based battle game taking place at a Bubble
+                  Tea shop.
+                </p>
+                <div class="project-description__links">
+                  <a href="" class="project-card__button"
+                    ><span class="fas fa-external-link-alt"></span
+                  ></a>
+                  <a href="https://github.com/alexWow88/game"
+                    ><span class="fab fa-github"></span
+                  ></a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        </div>
-        <div class="aos-animation" data-aos="fade-up">
-        <div class="project-card project-card-2">
-          <img class="project-card__image" src="./assets/images/calculator.PNG" alt="calculator-image">
-          <div class="project-description">
-            <h3>iPHONE CALCULATOR</h3>
-            <h4>VANILLA JS - SCSS - BEM - CYPRESS TESTED</h4>
-            <p>The iPhone Calculator remade using Vanilla Javascript. Calculator is fully responsive uses 2 displays. One to track what numbers and operations you have typed and one to display the computed result.</p>
-            <div class="project-description__links">
-              <a href="https://alexwow88.github.io/calculator/" class="project-card__button"><span class="fas fa-external-link-alt"></span></a>
-              <a href="https://github.com/alexWow88/calculator"><span class="fab fa-github"></span></a>
+      </section>
+      <!-- Slideshow container -->
+      <section class="other-projects">
+        <h2>OTHER PROJECTS</h2>
+      </section>
+      <div class="aos-animation" data-aos="fade-up">
+        <div class="slideshow-container">
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <img src="./assets/images/morse-code.PNG" style="width: 100%" />
+            <div class="text">
+              <h2>MORSE CODE TRANSLATOR</h2>
+              <h4>VANILLA JS - SCSS - BEM - CYPRESS TESTED</h4>
+              <p class="text__description">
+                Interested in More Code? Translate between English-to-Morse Code
+                or Morse Code-to-English. Translator is styled to look like
+                Google Translate and is fully Responsive. Check it out on your
+                mobile!
+              </p>
+              <div class="text__links">
+                <a
+                  href="https://alexwow88.github.io/morse-code-tdd/"
+                  class="project-card__button"
+                  ><span class="fas fa-external-link-alt"></span
+                ></a>
+                <a href="https://github.com/alexWow88/morse-code-tdd"
+                  ><span class="fab fa-github"></span
+                ></a>
+              </div>
             </div>
           </div>
-        </div>
-        </div>
-        <div class="aos-animation" data-aos="fade-up">
-        <div class="project-card project-card-3">
-          <img class="project-card__image" src="./assets/images/bubble-tea.PNG" alt="bubble-tea-game-image">
-          <div class="project-description">
-            <h3>BUBBLE TEA ADVENTURE GAME</h3>
-            <h4>JAVA</h4>
-            <p>Enjoy a fun turn-based battle game taking place at a Bubble Tea shop.</p>
-            <div class="project-description__links">
-              <a href="" class="project-card__button"><span class="fas fa-external-link-alt"></span></a>
-              <a href="https://github.com/alexWow88/game"><span class="fab fa-github"></span></a>
+          <div class="mySlides fade">
+            <img src="./assets/images/punk-api-image.PNG" style="width: 100%" />
+            <div class="text">
+              <h2>PUNK API</h2>
+              <p class="text__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+                facere eum veniam in perferendis incidunt quam asperiores fugit
+                dolor earum, dignissimos repellat officiis exercitationem
+                perspiciatis voluptate itaque, repellendus commodi iusto? Lorem
+                ipsum, dolor sit amet consectetur
+              </p>
+              <div class="text__links">
+                <a
+                  href="https://alexwow88.github.io/punk-api/"
+                  class="project-card__button"
+                  ><span class="fas fa-external-link-alt"></span
+                ></a>
+                <a href="https://github.com/alexWow88/mole-game"
+                  ><span class="fab fa-github"></span
+                ></a>
+              </div>
             </div>
           </div>
-        </div>
-        </div>
-      </div>
-    </section>
-        <!-- Slideshow container -->
-    <section class="other-projects">
-      <h2>OTHER PROJECTS</h2>
-    </section>
-    <div class="aos-animation" data-aos="fade-up">
-    <div class="slideshow-container">
-      <!-- Full-width images with number and caption text -->
-      <div class="mySlides fade">
-        <img src="./assets/images/morse-code.PNG" style="width:100%">
-        <div class="text">
-          <h2>MORSE CODE TRANSLATOR</h2>
-          <h4>VANILLA JS - SCSS - BEM - CYPRESS TESTED</h4>
-          <p class="text__description">Interested in More Code? Translate between English-to-Morse Code or Morse Code-to-English. Translator is styled to look like Google Translate and is fully Responsive. Check it out on your mobile!</p>
-          <div class="text__links">
-            <a href="https://alexwow88.github.io/morse-code-tdd/" class="project-card__button"><span class="fas fa-external-link-alt"></span></a>
-            <a href="https://github.com/alexWow88/morse-code-tdd"><span class="fab fa-github"></span></a>
+          <div class="mySlides fade">
+            <img src="./assets/images/netflix-clone.PNG" style="width: 100%" />
+            <div class="text">
+              <h2>Netflix Clone</h2>
+              <p class="text__description">
+                Netflix Clone code along with Clever Programmer on YouTube.
+              </p>
+              <div class="text__links">
+                <a
+                  href="https://alexwow88.github.io/netflix-clone/"
+                  class="project-card__button"
+                  ><span class="fas fa-external-link-alt"></span
+                ></a>
+                <a href="https://github.com/alexWow88/netflix-clone"
+                  ><span class="fab fa-github"></span
+                ></a>
+              </div>
+            </div>
           </div>
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br />
+        <!-- The dots/circles -->
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
         </div>
       </div>
-      <div class="mySlides fade">
-        <img src="./assets/images/punk-api-image.PNG" style="width:100%">
-        <div class="text">
-          <h2>PUNK API</h2>
-          <p class="text__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum facere eum veniam in perferendis incidunt quam asperiores fugit dolor earum, dignissimos repellat officiis exercitationem perspiciatis voluptate itaque, repellendus commodi iusto? Lorem ipsum, dolor sit amet consectetur</p>
-          <div class="text__links">
-            <a href="https://alexwow88.github.io/punk-api/" class="project-card__button"><span class="fas fa-external-link-alt"></span></a>
-            <a href="https://github.com/alexWow88/mole-game"><span class="fab fa-github"></span></a>
-          </div>
-        </div>
-      </div>
-      <div class="mySlides fade">
-        <img src="placeholder3.jpg" style="width:100%">
-        <div class="text">
-          <h2>PROJECT 3</h2>
-          <p class="text__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum facere eum veniam in perferendis incidunt quam asperiores fugit dolor earum, dignissimos repellat officiis exercitationem perspiciatis voluptate itaque, repellendus commodi iusto? Lorem ipsum, dolor sit amet consectetur</p>
-          <div class="text__links">
-            <a href="https://alexwow88.github.io/mole-game/" class="project-card__button"><span class="fas fa-external-link-alt"></span></a>
-            <a href="https://github.com/alexWow88/mole-game"><span class="fab fa-github"></span></a>
-          </div>
-        </div>
-      </div>
-      <!-- Next and previous buttons -->
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div>
-    <br>
-    <!-- The dots/circles -->
-    <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
-    </div>
-    <section id="contact">
-      <h2>CONTACT ME</h2>
-      <h3>Thanks for stopping by!!!</h3>
-      <span class="contact__icons">
-        <a href="Alexander-Wower-CV.pdf" class="contact__icons__cv">CV</a>
-        <span class="fas fa-envelope"></span>
-        <a href="https://uk.linkedin.com/in/alexander-wower-cssgb-82b462a2"><span class="fab fa-linkedin"></span></a>
-      </span>
-    </section>
-  </main>
-  <footer>
-    <h3><span class="far fa-copyright"></span> 2021 - Alex Wower</h3>
-  </footer>
-<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-<script src="app.js"></script>
+      <section id="contact">
+        <h2>CONTACT ME</h2>
+        <h3>Thanks for stopping by!!!</h3>
+        <span class="contact__icons">
+          <a href="Alexander-Wower-CV.pdf" class="contact__icons__cv">CV</a>
+          <span class="fas fa-envelope"></span>
+          <a href="https://uk.linkedin.com/in/alexander-wower-cssgb-82b462a2"
+            ><span class="fab fa-linkedin"></span
+          ></a>
+        </span>
+      </section>
+    </main>
+    <footer>
+      <h3><span class="far fa-copyright"></span> 2021 - Alex Wower</h3>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="app.js"></script>
 
-<script>
-  var slideIndex = 1;
-showSlides(slideIndex);
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
-</script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-</body>
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
